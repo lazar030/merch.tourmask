@@ -1,0 +1,50 @@
+.pageContainer {
+  .maskAds {
+    position: relative;
+    .backImage {
+      width: 100%;
+      object-fit: cover;
+      max-height: 55vh;
+      @media screen and (max-width: 999px) {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.2);
+      .logo {
+        padding: 1.5vw 3vw;
+        img {
+          max-height: 60px;
+          @media screen and (max-width: 767px) {
+            max-height: 40px;
+          }
+        }
+      }
+      .description {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 3vw;
+        color: white;
+        .pageTitle {
+          font-size: 6.5rem;
+          @media screen and (max-width: 999px) {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    padding: 4vw 3vw;
+  }
+}

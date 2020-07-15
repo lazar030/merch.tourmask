@@ -1,0 +1,5 @@
+<ion-slides [pager]="!instaView" [options]="instaView ? slideOpts1 : slideOpts" #slidesView [ngClass]="{'instaView': instaView}">
+  <ion-slide *ngFor="let photo of photos;">
+    <img [src]="photo"/>
+  </ion-slide>
+</ion-slides>
